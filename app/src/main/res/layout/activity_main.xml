@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtcodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Codigo"
+        android:inputType="textPersonName"
+        android:text="Codigo"
+        app:layout_marginBaseline="20dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="67dp" />
+
+    <EditText
+        android:id="@+id/txtdescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Descripcion"
+        android:inputType="textMultiLine|textPersonName"
+        android:text="Descripcion"
+        app:layout_constraintTop_toBottomOf="@+id/txtcodigo"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <EditText
+        android:id="@+id/txtmarca"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Marca"
+        android:inputType="textMultiLine"
+        android:text="Marca"
+        app:layout_constraintTop_toBottomOf="@+id/txtdescripcion"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/txtpresentacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Presentacion"
+        android:inputType="textPersonName"
+        android:text="Presentacion"
+        app:layout_constraintTop_toBottomOf="@+id/txtmarca"
+        tools:layout_editor_absoluteX="7dp" />
+
+    <EditText
+        android:id="@+id/txtprecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Precio"
+        android:inputType="textPersonName"
+        android:text="Precio"
+        app:layout_constraintTop_toBottomOf="@+id/txtpresentacion"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="Guardar"
+        app:layout_constraintTop_toBottomOf="@+id/txtprecio"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabRegresarLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:tooltipText="Regresar a lista de amigos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.898"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93"
+        app:srcCompat="@android:drawable/ic_menu_revert"/>
+
+    <TextView
+        android:id="@+id/txtstock"
+        android:layout_width="399dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="24dp"
+        android:hint="STOCK"
+        android:text="Stock Minimo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:layout_constraintTop_toBottomOf="@+id/txtprecio"
+        tools:layout_editor_absoluteX="6dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
